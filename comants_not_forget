@@ -1,0 +1,9 @@
+### very import!!!
+########################################################
+# Buscar la ultima informacion de varios directorys
+grep timing mp-*/OUTCAR-* | tac | sort -u -t: -k1,1
+
+#guardar la informacion buscada
+grep Iteration mp-*/OUTCAR-* | tac | sort -u -t: -k1,1 > archivo.txt
+
+
