@@ -1,4 +1,5 @@
 ### very import!!!
+### Dont forget coment the change for save the change
 ########################################################
 # Buscar la ultima informacion de varios directorys
 grep timing mp-*/OUTCAR-* | tac | sort -u -t: -k1,1
