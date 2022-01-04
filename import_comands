@@ -8,7 +8,7 @@ grep timing mp-*/OUTCAR-* | tac | sort -u -t: -k1,1
 grep Iteration mp-*/OUTCAR-* | tac | sort -u -t: -k1,1 > archivo.txt
 
 #seleccionar columnas 'awk'
-grep TOTEN E*/OUTCAR | tac | sort -u -t: -k1,1 | awk '{print $1, $6}'
+grep TOTEN E*/OUTCAR | tac | sort -u -t: -k1,1 | awk '{print $1, $6}'     #no es valido cuando solo hay 1 carpeta!!
 E100/OUTCAR: 270.15855156
 E150/OUTCAR: -38.07638251
 E200/OUTCAR: -67.62393187
