@@ -10,6 +10,7 @@ grep TOTEN HS_*/OUTCAR* | tac | sort -u -t: -k1,1
 grep Iteration mp-*/OUTCAR-* | tac | sort -u -t: -k1,1 > archivo.txt
 
 #seleccionar columnas 'awk'
+grep Iteration HS_U*/OUTCAR-2 | tac | sort -u -t: -k1,1 | awk '{print $3, $4}'
 grep TOTEN E*/OUTCAR | tac | sort -u -t: -k1,1 | awk '{print $1, $6}'     #no es valido cuando solo hay 1 carpeta!!
 E100/OUTCAR: 270.15855156
 E150/OUTCAR: -38.07638251
