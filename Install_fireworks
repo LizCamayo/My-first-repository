@@ -1,0 +1,44 @@
+Hola Liz,
+
+Estas son las instrucciones que envió Felipe para ejecutar el código que crea las estructuras magnéticas.
+
+Crear un entorno virtual de python:
+
+$ python -m venv ~/.venv
+
+Activarlo
+
+$ source ~/.venv/bin/activate
+
+Instalar los paquetes necesarios:
+
+$ pip install pymatgen fireworks atomate
+
+Instalar enumlib
+
+$ git clone --recursive https://github.com/msg-byu/enumlib.git
+$ cd enumlib/symlib/src
+$ make F90=gfortran
+$ cd ../../src
+$ make F90=gfortran
+$ make F90=gfortran enum.x
+$ mv enum.x ~/.local/bin/
+$ cp ../aux_src/makeStr.py ~/.local/bin/
+$ cd
+
+%---------------new------------------------
+Hola, usando pỳthon 3.10 y esas versiones parece funcionar el script, excepto por la parte de add_tags.
+
+Primero, instalar Python 3.10:
+
+wget -c https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tar.xz
+tar xvf Python-3.10.0.tar.xz
+cd Python-3.10.0/
+./configure --enable-optimizations
+sudo make allinstall
+
+Luego, crear un entorno virtual con esta versión e instalar esas versiones de paquetes
+
+python3.10 -m venv .magnetic_test
+source .magnetic_test/bin/activate
+pip install atomate==1.0.3 custodian==2023.3.10 numpy==1.21.5 pymatgen==2022.2.10 pymatgen-analysis-diffusion==2022.7.21 spglib==2.0.2
