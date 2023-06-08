@@ -26,7 +26,7 @@ $ mv enum.x ~/.local/bin/
 $ cp ../aux_src/makeStr.py ~/.local/bin/
 $ cd
 
-%---------------new------------------------
+%--------------end:bad----new------------------------
 Hola, usando pỳthon 3.10 y esas versiones parece funcionar el script, excepto por la parte de add_tags.
 
 Primero, instalar Python 3.10:
@@ -42,3 +42,13 @@ Luego, crear un entorno virtual con esta versión e instalar esas versiones de p
 python3.10 -m venv .magnetic_test
 source .magnetic_test/bin/activate
 pip install atomate==1.0.3 custodian==2023.3.10 numpy==1.21.5 pymatgen==2022.2.10 pymatgen-analysis-diffusion==2022.7.21 spglib==2.0.2
+%--------------end:bad----new------------------------
+$ sudo apt install wget build-essential libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev
+$ cd Python-3.10.0/
+$ ./configure --enable-optimizations
+$ sudo make altinstall
+Como ya tienes el entorno creado, solo entra e instala
+$ source .magnetic_test/bin/activate
+$ pip install atomate==1.0.3 custodian==2023.3.10 numpy==1.21.5 pymatgen==2022.2.10 pymatgen-analysis-diffusion==2022.7.21 spglib==2.0.2
+
+%----------------------end:good------------------------------------
