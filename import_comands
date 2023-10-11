@@ -6,6 +6,9 @@ grep timing mp-*/OUTCAR-* | tac | sort -u -t: -k1,1
 grep vol HS_*/OUTCAR* | tac | sort -u -t: -k1,1
 grep TOTEN HS_*/OUTCAR* | tac | sort -u -t: -k1,1
 grep MAGMON mp-*/INCAR | tac | sort -u -t: -k1,1
+grep LDAUU mp-*/INCAR | tac | sort -u -t: -k1,1
+grep SYSTEM mp-*/INCAR | tac | sort -u -t: -k1,1
+
 
 #guardar la informacion buscada
 grep Iteration mp-*/OUTCAR-* | tac | sort -u -t: -k1,1 > archivo.txt
