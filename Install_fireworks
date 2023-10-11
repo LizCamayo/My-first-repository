@@ -1,4 +1,4 @@
-##### Comando que si funciono::
+##### Comando que si funciono, pero malogro jupyter notebook::
 
 #### update jupyter-notebook
  pip3 install --upgrade --force-reinstall --no-cache-dir jupyter
