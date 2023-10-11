@@ -1,3 +1,10 @@
+##### Comando que si funciono::
+
+#### update jupyter-notebook
+ pip3 install --upgrade --force-reinstall --no-cache-dir jupyter
+#----------------------------------------------------
+
+
 Hola Liz,
 
 Estas son las instrucciones que envió Felipe para ejecutar el código que crea las estructuras magnéticas.
