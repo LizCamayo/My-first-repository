@@ -1,6 +1,6 @@
 ##### Comando que si funciono, pero malogro jupyter notebook::
 
-#### update jupyter-notebook (no funcionó)
+#### update jupyter-notebook (malogró nuestro jupyter)
  pip3 install --upgrade --force-reinstall --no-cache-dir jupyter
 #----------------------------------------------------
 
