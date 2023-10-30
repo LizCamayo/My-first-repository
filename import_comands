@@ -1,5 +1,8 @@
 ### very import!!!
-### Dont forget coment the change for save the change
+#######################################################
+# Comands 'vim' ::
+wc -l *.dat --> muestra the lines of each archive
+
 ########################################################
 # Buscar la ultima informacion de varios directorys
 grep timing mp-*/OUTCAR-* | tac | sort -u -t: -k1,1
