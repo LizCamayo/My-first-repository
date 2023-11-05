@@ -2,6 +2,12 @@
 ### very import!!!
 #######################################################
 
+#-----------------------------------------------------
+# cp ::
+scp archive lcamayo@leftraru.nlhpc.cl:/home/lcamayo/carpeta/  --> cp de tu compu al cluster
+scp lcamayo@leftraru.nlhpc.cl:/home/lcamayo/archive . --> cp del cluster a tu compu
+sftp lcamyo@leftraru.nlhpc.cl   --> get del cluster a tu compu
+
 #------------------------------------------------------
 # Comands 'vim' ::
 wc -l *.dat --> muestra the lines of each archive
