@@ -6,7 +6,7 @@
 # Comands 'vim' ::
 wc -l *.dat --> muestra the lines of each archive
 tar -xvf archive.tar --> descomprime archive.tar
-tar -zcvf  archivo.tar.gz(out) archive(in) --> comprime archivo
+tar -zcvf  archivo.tar.gz(out) archive(in) --> comprime archive
 
 #------------------------------------------------------
 # Buscar la ultima informacion de varios directorys ::
