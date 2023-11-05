@@ -1,10 +1,15 @@
+#######################################################
 ### very import!!!
 #######################################################
+
+#------------------------------------------------------
 # Comands 'vim' ::
 wc -l *.dat --> muestra the lines of each archive
+tar -xvf archive.tar --> descomprime archive.tar
+tar -zcvf  archivo.tar.gz(out) archive(in)
 
-########################################################
-# Buscar la ultima informacion de varios directorys
+#------------------------------------------------------
+# Buscar la ultima informacion de varios directorys ::
 grep timing mp-*/OUTCAR-* | tac | sort -u -t: -k1,1
 grep vol HS_*/OUTCAR* | tac | sort -u -t: -k1,1
 grep TOTEN HS_*/OUTCAR* | tac | sort -u -t: -k1,1
@@ -12,10 +17,11 @@ grep MAGMON mp-*/INCAR | tac | sort -u -t: -k1,1
 grep LDAUU mp-*/INCAR | tac | sort -u -t: -k1,1
 grep SYSTEM mp-*/INCAR | tac | sort -u -t: -k1,1
 
-
-#guardar la informacion buscada
+#------------------------------------------------------
+# guardar la informacion buscada
 grep Iteration mp-*/OUTCAR-* | tac | sort -u -t: -k1,1 > archivo.txt
 
+#------------------------------------------------------
 #seleccionar columnas 'awk'
 grep Iteration HS_U*/OUTCAR-2 | tac | sort -u -t: -k1,1 | awk '{print $3, $4}'
 grep TOTEN E*/OUTCAR | tac | sort -u -t: -k1,1 | awk '{print $1, $6}'     #no es valido cuando solo hay 1 carpeta!!
@@ -29,6 +35,7 @@ E400/OUTCAR: -67.64723448
 E450/OUTCAR: -67.58288606
 E500/OUTCAR: -67.54550471
 
+#------------------------------------------------------
 #delimitador -F hasta '/' con 'awk'
 grep TOTEN E*/OUTCAR | tac | sort -u -t: -k1,1 | awk -F '/' '{print $1}'
 E100
@@ -40,6 +47,6 @@ E350
 E400
 E450
 E500
-
+#------------------------------------------------------
 
 
