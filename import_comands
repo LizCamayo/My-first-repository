@@ -1,7 +1,9 @@
 #######################################################
 ### very import!!!
 #######################################################
-
+#-----------------------------------------------------
+# calculate band-gap::
+python3 bandgap.py OUTCAR-2
 #-----------------------------------------------------
 # cp ::
 scp archive lcamayo@leftraru.nlhpc.cl:/home/lcamayo/carpeta/  --> cp de tu compu al cluster
