@@ -15,8 +15,8 @@ sftp lcamyo@leftraru.nlhpc.cl   --> get del cluster a tu compu
 #------------------------------------------------------
 # Comands 'vim' ::
 wc -l *.dat --> muestra the lines of each archive
-tar -xvf archive.tar --> descomprime archive.tar
-tar -zcvf archivo.tar.gz(out) archive(in) --> comprime archive
+tar -xvf archive.tar --> descomprime archive.tar o folder.tar
+tar -zcvf archivo.tar.gz(out) archive(in) --> comprime archive o folder
 
 #------------------------------------------------------
 # Buscar la ultima informacion de varios directorys ::
