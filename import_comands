@@ -1,6 +1,21 @@
 #######################################################
 ### very import!!!
 #######################################################
+#-----------------------------------------------------
+Editar Github ::
+1. Ir al achivo
+2. Click lapiz
+3. Editar
+4. Comentar
+
+#-----------------------------------------------------
+Crear POTCAR ::
+1. cat /home/tu_usuario/Potencial/PBE/atomo1/POTCAR > POTCAR          ---->  Crea el archivo POTCAR con el potencial del atom1 
+2. cat /home/tu_usuario/Potencial/PBE/atomo2/POTCAR >> POTCAR         ---->   Agrega al POTCAR con el potencial del atom2
+3. cat /home/tu_usuario/Potencial/PBE/atomo3/POTCAR >> POTCAR         ---->   Agrega al POTCAR con el potencial del atom3
+.
+.
+.
 
 #-----------------------------------------------------
 # calculate band-gap::
@@ -45,6 +60,9 @@ E400/OUTCAR: -67.64723448
 E450/OUTCAR: -67.58288606
 E500/OUTCAR: -67.54550471
 
+#------------------------------------------------------
+Encontrar TOTEN para una carpeta (muestra solo la ultima energia)
+grep TOTEN OUTCAR | tail -1
 #------------------------------------------------------
 #delimitador -F hasta '/' con 'awk'
 grep TOTEN E*/OUTCAR | tac | sort -u -t: -k1,1 | awk -F '/' '{print $1}'
