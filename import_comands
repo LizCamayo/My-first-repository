@@ -15,7 +15,6 @@ Crear POTCAR ::
 3. cat /home/tu_usuario/Potencial/PBE/atomo3/POTCAR >> POTCAR         ---->   Agrega al POTCAR con el potencial del atom3
 .
 .
-.
 
 #-----------------------------------------------------
 # calculate band-gap::
@@ -32,6 +31,12 @@ sftp lcamyo@leftraru.nlhpc.cl   --> get del cluster a tu compu
 wc -l *.dat --> muestra the lines of each archive
 tar -xvf archive.tar --> descomprime archive.tar o folder.tar
 tar -zcvf archivo.tar.gz(out) archive(in) --> comprime archive o folder
+
+#------------------------------------------------------
+Encontrar 'un valor' para una carpeta ::
+grep TOTEN OUTCAR | tail -1      --> Muestra solo la ultima energia, sin ordenar la energía de forma creciente.
+
+grep 'ES     =' OUTCAR           --> Encuentra el valor que quieres, sin ordenar el valor de forma creciente.
 
 #------------------------------------------------------
 # Buscar la ultima informacion de varios directorys ::
@@ -60,11 +65,6 @@ E400/OUTCAR: -67.64723448
 E450/OUTCAR: -67.58288606
 E500/OUTCAR: -67.54550471
 
-#------------------------------------------------------
-Encontrar 'un valor' para una carpeta ::
-grep TOTEN OUTCAR | tail -1      --> Muestra solo la ultima energia, sin ordenar la energía de forma creciente.
-
-grep 'ES     =' OUTCAR           --> Encuentra el valor que quieres, sin ordenar el valor de forma creciente.
 #------------------------------------------------------
 #delimitador -F hasta '/' con 'awk'
 grep TOTEN E*/OUTCAR | tac | sort -u -t: -k1,1 | awk -F '/' '{print $1}'
