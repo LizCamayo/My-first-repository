@@ -49,7 +49,7 @@ grep Iteration mp-*/OUTCAR-* | tac | sort -u -t: -k1,1 > archivo.txt
 #------------------------------------------------------
 #seleccionar columnas 'awk'
 grep Iteration HS_U*/OUTCAR-2 | tac | sort -u -t: -k1,1 | awk '{print $3, $4}'
-grep TOTEN E*/OUTCAR | tac | sort -u -t: -k1,1 | awk '{print $1, $6}'     #no es valido cuando solo hay 1 carpeta!!
+grep TOTEN E*/OUTCAR | tac | sort -u -t: -k1,1 | awk '{print $1, $6}'     #no es valido cuando solo hay 1 carpeta. Ordena los valores encontrados de forma creciente!!
 E100/OUTCAR: 270.15855156
 E150/OUTCAR: -38.07638251
 E200/OUTCAR: -67.62393187
@@ -61,8 +61,10 @@ E450/OUTCAR: -67.58288606
 E500/OUTCAR: -67.54550471
 
 #------------------------------------------------------
-Encontrar TOTEN para una carpeta (muestra solo la ultima energia)
-grep TOTEN OUTCAR | tail -1
+Encontrar 'un valor' para una carpeta ::
+grep TOTEN OUTCAR | tail -1      --> Muestra solo la ultima energia, sin ordenar la energía de forma creciente.
+
+grep 'ES     =' OUTCAR           --> Encuentra el valor que quieres, sin ordenar el valor de forma creciente.
 #------------------------------------------------------
 #delimitador -F hasta '/' con 'awk'
 grep TOTEN E*/OUTCAR | tac | sort -u -t: -k1,1 | awk -F '/' '{print $1}'
