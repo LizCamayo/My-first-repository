@@ -24,6 +24,7 @@ python3 bandgap.py OUTCAR-2
 # cp ::
 scp archive lcamayo@leftraru.nlhpc.cl:/home/lcamayo/carpeta/  --> cp de tu compu al cluster
 scp lcamayo@leftraru.nlhpc.cl:/home/lcamayo/archive . --> cp del cluster a tu compu
+scp -P 4603 lcamayo@leftraru.nlhpc.cl:/home/lcamayo/archive . --> cp del cluster a tu compu (new in leftraru)
 sftp lcamyo@leftraru.nlhpc.cl   --> get del cluster a tu compu
 
 #------------------------------------------------------
