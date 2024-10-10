@@ -3,10 +3,11 @@
 #######################################################
 #-----------------------------------------------------
 Editar Github ::
-1. Ir al achivo
-2. Click lapiz
-3. Editar
-4. Comentar
+1. Ingresar a github desde tu cuenta (password)
+2. Ir al achivo
+3. Click lapiz
+4. Editar
+5. Comentar
 
 #-----------------------------------------------------
 Crear POTCAR ::
@@ -30,8 +31,13 @@ sftp lcamyo@leftraru.nlhpc.cl   --> get del cluster a tu compu
 #------------------------------------------------------
 # Comands 'vim' ::
 wc -l *.dat --> muestra the lines of each archive
+
+# comprimir or descomprimir .tar ::
 tar -xvf archive.tar --> descomprime archive.tar o folder.tar
 tar -zcvf archivo.tar.gz(out) archive(in) --> comprime archive o folder
+
+# comprimir or descomprimir .rar ::
+unrar x archivo.rar
 
 #------------------------------------------------------
 Encontrar 'un valor' para una carpeta ::
