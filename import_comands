@@ -36,7 +36,7 @@ scp -r -P 4603 lcamayo@leftraru.nlhpc.cl:/home/lcamayo/directory/ . --> cp direc
 # cp compu to cluster ::
 scp archive lcamayo@leftraru.nlhpc.cl:/home/lcamayo/directory/  --> cp archive
 scp -r directory lcamayo@leftraru.nlhpc.cl:/home/lcamayo/directory/  --> cp directory
-scp -P 4603 archive lcamayo@leftraru.nlhpc.cl:/home/lcamayo/directory/  --> cp archivo (new in leftraru)
+scp -P 4603 archive lcamayo@leftraru.nlhpc.cl:/home/lcamayo/directory/  --> cp archive (new in leftraru)
 scp -r -P 4603 drectory lcamayo@leftraru.nlhpc.cl:/home/lcamayo/directory/  --> cp directory (new in leftraru)
 
 #------------------------------------------------------
