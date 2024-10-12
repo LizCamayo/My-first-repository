@@ -22,11 +22,22 @@ Crear POTCAR ::
 python3 bandgap.py OUTCAR-2
 
 #-----------------------------------------------------
-# cp ::
-scp archive lcamayo@leftraru.nlhpc.cl:/home/lcamayo/carpeta/  --> cp de tu compu al cluster
-scp lcamayo@leftraru.nlhpc.cl:/home/lcamayo/archive . --> cp del cluster a tu compu
-scp -P 4603 lcamayo@leftraru.nlhpc.cl:/home/lcamayo/archive . --> cp del cluster a tu compu (new in leftraru)
-sftp lcamyo@leftraru.nlhpc.cl   --> get del cluster a tu compu
+# cluster ::
+ssh -p 4603 lcamayo@leftraru.nlhpc.cl
+
+#-----------------------------------------------------
+# cp cluster to compu ::
+scp lcamayo@leftraru.nlhpc.cl:/home/lcamayo/archive . --> cp archive
+sftp lcamyo@leftraru.nlhpc.cl   --> get archivo or directory
+scp -P 4603 lcamayo@leftraru.nlhpc.cl:/home/lcamayo/archive . --> cp archive (new in leftraru)
+scp -r -P 4603 lcamayo@leftraru.nlhpc.cl:/home/lcamayo/directory/ . --> cp directory (new in leftraru)
+
+#-----------------------------------------------------
+# cp compu to cluster ::
+scp archive lcamayo@leftraru.nlhpc.cl:/home/lcamayo/directory/  --> cp archive
+scp -r directory lcamayo@leftraru.nlhpc.cl:/home/lcamayo/directory/  --> cp directory
+scp -P 4603 archive lcamayo@leftraru.nlhpc.cl:/home/lcamayo/directory/  --> cp archivo (new in leftraru)
+scp -r -P 4603 drectory lcamayo@leftraru.nlhpc.cl:/home/lcamayo/directory/  --> cp directory (new in leftraru)
 
 #------------------------------------------------------
 # Comands 'vim' ::
