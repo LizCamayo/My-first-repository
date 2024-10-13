@@ -53,8 +53,8 @@ unrar x archivo.rar
 #------------------------------------------------------
 Encontrar 'un valor' para una carpeta ::
 grep TOTEN OUTCAR | tail -1      --> Muestra solo la ultima energia, sin ordenar la energía de forma creciente.
-
 grep 'ES     =' OUTCAR           --> Encuentra el valor que quieres, sin ordenar el valor de forma creciente.
+grep PWA_PBE POTCAR
 
 #------------------------------------------------------
 # Buscar la ultima informacion de varios directorys ::
