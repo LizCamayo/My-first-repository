@@ -24,6 +24,7 @@ python3 bandgap.py OUTCAR-2
 #-----------------------------------------------------
 # cluster ::
 ssh -p 4603 lcamayo@leftraru.nlhpc.cl
+ssh lcamayo@146.83.191.78
 
 #-----------------------------------------------------
 # cp cluster to compu ::
